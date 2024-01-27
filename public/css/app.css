@@ -1,0 +1,30 @@
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 320px;
+  height: 100%;
+}
+.contenedor {
+  background-color: #061943;
+  border-radius: 10px;
+}
+.submit {
+  background-color: #00906f;
+}
+.label {
+  color: #8397bc;
+  cursor: pointer;
+}
+input {
+  border: 1px solid #8397bc;
+  padding: 5px;
+  color: #8397bc;
+}
+
+
