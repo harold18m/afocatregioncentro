@@ -10,7 +10,7 @@ class VigenciaController extends Controller
     public function consultarVigencia(Request $request)
 {
     $placa = $request->input('placa');
-
+    $placa = str_replace('-','',$placa);
     if (empty($placa)) {
         return redirect()->route('home'); 
     }
