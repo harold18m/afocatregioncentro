@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     @include('components.header')
-    <main class="contenedor w-1/2 my-5 mx-auto py-5 px-10 text-white">
+    <main class="contenedor w-11/12 md:w-1/2  my-5 mx-auto py-5 px-10 text-white">
         <div>
             <img src="{{ asset('img/cc-cloud-06.svg') }}" alt="Consulte su vigencia" class="mx-auto mb-2" />
         </div>

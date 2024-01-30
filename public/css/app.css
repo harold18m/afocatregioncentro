@@ -13,8 +13,6 @@
 .contenedor {
   background-color: #061943;
   border-radius: 10px;
-  max-width: 720px;
-  width: 90%;
 }
 
 .submit {
@@ -47,7 +45,12 @@ input {
     color: #061943;
     font-weight: bold;
 }
-
+select {
+  border: 1px solid #8397bc;
+  padding: 5px;
+  color: #8397bc;
+  background-color: transparent;
+}
 select option {
   background-color: #fff; 
   color: #333; 
