@@ -3,6 +3,9 @@
 @section('content')
     @include('components.header')
     <main class="contenedor w-1/2 my-5 mx-auto py-5 px-10 text-white">
+    <div>
+        <img src="{{ asset('img/cc-map-01-06.svg') }}" alt="Consulte su vigencia" class="mx-auto mb-2" />
+    </div>
     <h1 class="text-4xl mb-5 font-bold text-center">Gestión Permiso</h1>
         <hr class="border-t-2 border-green-500 mb-5 w-1/3 mx-auto" />
         <form action="{{ route('generatePDF') }}" method="post">

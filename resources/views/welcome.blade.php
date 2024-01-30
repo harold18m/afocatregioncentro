@@ -2,16 +2,20 @@
 @section('content')
     @include('components.header')
     <main class="contenedor w-1/2 my-5 mx-auto py-5 px-10 text-white">
-        <h1 class="text-4xl mb-5 font-bold text-center">Consulte su vigencia</h1>
+        <div>
+            <img src="{{ asset('img/cc-cloud-06.svg') }}" alt="Consulte su vigencia" class="mx-auto mb-2" />
+        </div>
+        <h1 class="text-4xl mb-3 font-bold text-center">Consulte su vigencia</h1>
         <hr class="border-t-2 border-green-500 mb-5 w-1/3 mx-auto" />
         <form id="consultaForm" action="{{ url('/consultar-vigencia') }}" method="GET" class="flex flex-col">
             @csrf
-            <label for="opcion" class="label mb-2 text-center mx-2 font-bold">Seleccione Opción</label>
+            <!-- <label for="opcion" class="label mb-2 text-center mx-2 font-bold">Seleccione Opción</label> -->
             <select
                 name="opcion"
                 id="opcion"
                 class="mb-4 bg-transparent text-white text-center p-3 border-1 border-white font-semibold"
                 required
+                hidden
             >
                 <option value="1" >Placa</option>
                 <option value="2" >Número de CAT</option>
@@ -21,7 +25,7 @@
                 type="text"
                 id="placa"
                 name="placa"
-                placeholder="Ej. Placa (V1V123) o CAT (1234-2024)"
+                placeholder="Ej. Placa (V1V123)"  
                 class="mb-4 bg-transparent text-white text-center p-3 border-1 border-white-500 font-semibold"
                 oninput="this.value = this.value.toUpperCase()"
                 required

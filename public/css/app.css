@@ -5,6 +5,11 @@
   width: 100%;
 }
 
+img {
+  width: 15%;
+  height: 20%;
+}
+
 .logo {
   width: 320px;
   height: 100%;
@@ -13,6 +18,8 @@
 .contenedor {
   background-color: #061943;
   border-radius: 10px;
+  max-width: 720px;
+  width: 90%;
 }
 
 .submit {
