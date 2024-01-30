@@ -39,7 +39,7 @@
             </div>
             <div class="text-center my-4 flex justify-around">
                 <a href="{{ route('home') }}" class="nosubmit px-4 py-2 mr-5 font-semibold w-1/2 text-center">Regresar</a>
-                <button onclick="location.href='{{ route('gestion-permiso') }}'" class="submit px-4 py-2 ml-5 font-semibold text-white w-1/2 text-center" >Generar Permiso</button>
+                <button onclick="location.href='{{ route('gestion-permiso') }}'" class="submit px-4 py-2 ml-5 font-semibold text-white w-1/2 text-center" disabled >Generar Permiso</button>
             </div>
            <p> * No se puede generar permisos hasta nuevo aviso. </p>
         @else
