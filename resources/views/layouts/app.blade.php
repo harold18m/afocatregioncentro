@@ -11,6 +11,12 @@
 
     <!-- Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        img {
+            width: 85px;
+            height: 85px;
+        }
+    </style>
 </head>
 <body>
     @yield('content')
