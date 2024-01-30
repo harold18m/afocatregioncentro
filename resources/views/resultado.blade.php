@@ -13,13 +13,13 @@
                 <div class="w-1/2 px-2">
                     <div class="form-group">
                         <label for="placa" class="block text-sm font-bold mb-2">Placa:</label>
-                        <input type="text" id="placa" class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200" value="{{ $result['returnObject']['placa'] }}" readonly>
+                        <input type="text" id="placa" class="inputstatic shadow appearance-none border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline " value="{{ $result['returnObject']['placa'] }}" readonly>
                     </div>
                 </div>
                 <div class="w-1/2 px-2">
                     <div class="form-group">
                         <label for="cat" class="block  text-sm font-bold mb-2">CAT:</label>
-                        <input type="text" id="cat" class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200" value="{{ $result['returnObject']['ncat'] }}" readonly>
+                        <input type="text" id="cat" class="inputstatic shadow appearance-none border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline " value="{{ $result['returnObject']['ncat'] . '-' . $result['returnObject']['acat']  }}" readonly>
                     </div>
                 </div>
             </div>
@@ -36,32 +36,21 @@
                 <input type="text" id="estado" class="shadow appearance-none border border-white border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" value="Vigente" readonly>
             </div>
             <div class="text-center my-4 flex justify-around">
-                <a href="{{ route('home') }}" class="nosubmit px-4 py-2 mr-5 font-semibold text-white w-1/2 text-center">Regresar</a>
-                <a href="{{ route('home') }}" class="submit px-4 py-2 ml-5 font-semibold text-white w-1/2 text-center">Generar Permiso</a>
+                <a href="{{ route('home') }}" class="nosubmit px-4 py-2 mr-5 font-semibold w-1/2 text-center">Regresar</a>
+                <a href="{{ route('gestion-permiso') }}" class="submit px-4 py-2 ml-5 font-semibold text-white w-1/2 text-center">Generar Permiso</a>
             </div>
         </div>
         @else
             <!-- Placa no encontrada, muestra el mensaje de error -->
+            <h1 class="text-4xl mb-5 font-bold text-center">Activa tu Seguridad</h1>
+            <hr class="border-t-2 border-green-500 mb-5 w-1/3 mx-auto" />
             <p class="text-center m-5">{{ $result['eventoString'] }}</p>
-            <div class="text-center m-5">
-                <a href="{{ route('home') }}" class="submit px-4 py-2 text-white">Nueva consulta</a>
-                <a href="{{ route('home') }}" class="submit px-4 py-2 text-white">Comprar CAT Virtual</a>
+            <div class="text-center my-4 flex justify-around">
+                <a href="{{ route('home') }}" class="nosubmit px-4 py-2 mr-5 font-semibold w-1/2 text-center">Nueva Consulta</a>
+                <a href="{{ route('home') }}" class="submit px-4 py-2 ml-5 font-semibold text-white w-1/2 text-center">Comprar CAT Virtual</a>
             </div>
         @endif
 
     </main>
-    <style>
-        .nosubmit {
-        background-color: transparent;
-        border: 1px solid #00906f;
-        color : #00906f;
-        }
-        label {
-            font-weight: bold;
-            color: #a0aec0;
-            margin-left: 5px;
-        }
-    </style>
-
     @include('components.footer')
 @endsection

@@ -5,18 +5,37 @@
         <h1 class="text-4xl mb-5 font-bold text-center">Consulte su vigencia</h1>
         <hr class="border-t-2 border-green-500 mb-5 w-1/3 mx-auto" />
         <form id="consultaForm" action="{{ url('/consultar-vigencia') }}" method="GET" class="flex flex-col">
-        <label for="placa" class="label mb-2 text-center mx-2 font-bold">Ingrese Placa</label>
-        <input
-            type="text"
-            id="placa"
-            name="placa"
-            placeholder="Ej.(V1V123)"
-            class="mb-4 bg-transparent text-white text-center p-3 border-1 border-white-500 font-semibold"
-            oninput="this.value = this.value.toUpperCase()"
-            required
-        />
-        <input type="submit" value="Verificar Vigencia" class="submit px-4 py-2 text-white" />
+            @csrf
+            <label for="opcion" class="label mb-2 text-center mx-2 font-bold">Seleccione Opción</label>
+            <select
+                name="opcion"
+                id="opcion"
+                class="mb-4 bg-transparent text-white text-center p-3 border-1 border-white font-semibold"
+                required
+            >
+                <option value="1" >Placa</option>
+                <option value="2" >Número de CAT</option>
+            </select>    
+            <label for="placa" class="label mb-2 text-center mx-2 font-bold">Ingrese Placa</label>
+            <input
+                type="text"
+                id="placa"
+                name="placa"
+                placeholder="Ej. Placa (V1V123) o CAT (1234-2024)"
+                class="mb-4 bg-transparent text-white text-center p-3 border-1 border-white-500 font-semibold"
+                oninput="this.value = this.value.toUpperCase()"
+                required
+            />
+            @if (session('error'))
+                <div class="text-center mb-3 text-red-200 ">
+                    {{ session('error') }}
+                </div>
+            @endif
+            <input type="submit" value="Verificar Vigencia" class="submit px-4 py-2 text-white" />
         </form>
+
+
+
     </main>
     <style>
         .submit {

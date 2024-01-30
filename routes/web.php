@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VigenciaController;
+use App\Http\Controllers\GestionPermisoController;
+use App\Http\Controllers\PDFController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +20,6 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/consultar-vigencia', [VigenciaController::class, 'consultarVigencia']);
+Route::get('/consultar-vigencia', [VigenciaController::class, 'consultarVigencia'])->name('consultar-vigencia') ;
+Route::get('/gestion-permiso', [GestionPermisoController::class, 'mostrarGestionPermiso'])->name('gestion-permiso');
+Route::post('/generar-permiso', [PDFController::class, 'generatePDF'])->name('generatePDF');
