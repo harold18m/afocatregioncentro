@@ -63,6 +63,18 @@
                 </a>
             </div>
         @endif
+        <style>
+            .carita{
+                display: flex; 
+                align-items: center; 
+                justify-content: center;
+            }
+            span img{
+                width: 30px;
+                margin-right: 5px;
+            }
+
+        </style>
     </main>
     @include('components.footer')
 @endsection
