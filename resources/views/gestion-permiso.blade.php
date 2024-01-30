@@ -27,7 +27,7 @@
                 </div>
                 <div>
                     <label for="destino" class="block text-sm font-bold my-2">Selecciona un Destino:</label>
-                    <select name="destino" id="destino" name="destino" class="shadow appearance-none border border-white border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent">
+                    <select name="destino" id="destino" name="destino" class="shadow appearance-none border   border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent">
                         <option value="1">Huancayo</option>
                         <option value="2">Chupaca</option>
                         <option value="3">Chilca</option>
@@ -46,19 +46,19 @@
                     <div class="w-1/2 px-2">
                         <div class="form-group">
                             <label for="fechaInicio" class="block text-sm font-bold mb-2">Fecha de inicio:</label>
-                            <input type="date" id="fechaInicio" name="fechaInicio" class="inputstatic shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent border-white" value="{{ date('Y-m-d') }}">
+                            <input type="date" id="fechaInicio" name="fechaInicio" class="inputstatic shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent  " value="{{ date('Y-m-d') }}">
                         </div>
                     </div>
                     <div class="w-1/2 px-2">
                         <div class="form-group">
                             <label for="fechaFin" class="block  text-sm font-bold mb-2">Fecha de fin:</label>
-                            <input type="date" id="fechaFin" name="fechaFin" class="inputstatic shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent border-white" value="{{ date('Y-m-d', strtotime('+1 month')) }}">
+                            <input type="date" id="fechaFin" name="fechaFin" class="inputstatic shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent  " value="{{ date('Y-m-d', strtotime('+1 month')) }}">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="conductor" class="block  text-sm font-bold my-2">Conductor:</label>
-                    <input type="text" id="conductor" name="conductor" class="shadow appearance-none border border-white border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent">
+                    <input type="text" id="conductor" name="conductor" class="shadow appearance-none border   border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent">
                 </div>
                 <div id="familiares">
                 </div>
@@ -73,7 +73,7 @@
                 let i = 0;
                 $('#addFamiliar').click(function(e) {
                     e.preventDefault();
-                    $('#familiares').append('<div class="form-group"><label for="conductor" class="block  text-sm font-bold my-2">Familiar / Acompañante:</label><input type="text" id="familiar' + i + '" name="familiar[]" class="shadow appearance-none border border-white border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent"></div>');
+                    $('#familiares').append('<div class="form-group"><label for="conductor" class="block  text-sm font-bold my-2">Familiar / Acompañante:</label><input type="text" id="familiar' + i + '" name="familiar[]" class="shadow appearance-none border   border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent"></div>');
                     i++;
                 });
             });

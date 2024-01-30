@@ -5,11 +5,11 @@
         <div>
             <img src="{{ asset('img/cc-cloud-06.svg') }}" alt="Consulte su vigencia" class="mx-auto mb-2" />
         </div>
-        <h1 class="text-4xl mb-3 font-bold text-center">Consulte su vigencia</h1>
+        <h1 class="text-4xl mb-3 font-semibold text-center">Consulte su vigencia</h1>
         <hr class="border-t-2 border-green-500 mb-5 w-1/3 mx-auto" />
         <form id="consultaForm" action="{{ url('/consultar-vigencia') }}" method="GET" class="flex flex-col">
             @csrf
-            <!-- <label for="opcion" class="label mb-2 text-center mx-2 font-bold">Seleccione Opción</label> -->
+            <!-- <label for="opcion" class="label mb-2 text-center mx-2  ">Seleccione Opción</label> -->
             <select
                 name="opcion"
                 id="opcion"
@@ -20,7 +20,7 @@
                 <option value="1" >Placa</option>
                 <option value="2" >Número de CAT</option>
             </select>    
-            <label for="placa" class="label mb-2 text-center mx-2 font-bold">Ingrese Placa</label>
+            <label for="placa" class="label mb-2 text-center mx-2">Ingrese Placa</label>
             <input
                 type="text"
                 id="placa"

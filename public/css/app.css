@@ -5,8 +5,6 @@
   width: 100%;
 }
 
-
-
 .logo {
   width: 320px;
   height: 100%;
@@ -24,10 +22,10 @@
 }
 
 label {
-  font-weight: bold;
   color: #a0aec0;
-  margin-left: 5px;
-  margin-top: 5px;
+  margin-left: 12px;
+  margin-top: 12px;
+  margin-bottom: auto;
 }
 
 input {
@@ -41,11 +39,13 @@ input {
   background-color: transparent;
   border: 1px solid #00906f;
   color : #00906f;
+  font-weight: bold;
   }
 
 .inputstatic {
     background-color: #8296b5;
     color: #061943;
+    font-weight: bold;
 }
 
 select option {
@@ -55,4 +55,14 @@ select option {
 
 input[type="date"]::-webkit-calendar-picker-indicator {
 filter: invert(1);
+}
+
+.carita{
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+span img{
+  width: 30px;
+  margin-right: 5px;
 }
