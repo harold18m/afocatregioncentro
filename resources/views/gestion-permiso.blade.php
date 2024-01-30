@@ -47,19 +47,19 @@
                     <div   div class="w-full md:w-1/2 px-2">
                         <div class="form-group">
                             <label for="fechaInicio" class="block text-sm ">Fecha de inicio:</label>
-                            <input type="date" id="fechaInicio" name="fechaInicio" class="shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent  " value="{{ date('Y-m-d') }}">
+                            <input type="date" id="fechaInicio" name="fechaInicio" class="shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent  " value="{{ date('Y-m-d') }}"  required>
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 px-2">
                         <div class="form-group">
                             <label for="fechaFin" class="block  text-sm ">Fecha de fin:</label>
-                            <input type="date" id="fechaFin" name="fechaFin" class="shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent  " value="">
+                            <input type="date" id="fechaFin" name="fechaFin" class="shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent  " value=""  required>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="conductor" class="block  text-sm ">Conductor:</label>
-                    <input type="text" id="conductor" name="conductor" class="shadow appearance-none border   border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent">
+                    <input type="text" id="conductor" name="conductor" class="shadow appearance-none border   border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent"  required>
                 </div>
                 <!-- familiares o acompañantes -->
                 <div id="familiares">
@@ -86,11 +86,28 @@
                 });
             });
         </script>
+        <script>
+        document.getElementById('fechaInicio').addEventListener('change', function() {
+            document.getElementById('fechaFin').min = this.value;
+        });
+
+        document.getElementById('fechaFin').addEventListener('change', function() {
+            var fechaInicio = new Date(document.getElementById('fechaInicio').value);
+            var fechaFin = new Date(this.value);
+
+            if (fechaFin < fechaInicio) {
+                alert('La fecha de fin no puede ser anterior a la fecha de inicio');
+                this.value = '';
+            }
+        });
+        </script>
     </main>
     <style>
     .submit-button {
         color: white;
         background-color: #00906f;
+        border: none;
+        border-radius: 2px;
     }
 
     .custom-button {

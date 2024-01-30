@@ -16,7 +16,7 @@ class PDFController extends Controller
             'fechaInicio' => $request->input('fechaInicio'),
             'fechaFin' => $request->input('fechaFin'),
             'conductor' => $request->input('conductor'),
-            'familiar' => $request->input('familiar')
+            'familiares' => $request->input('familiar')
         ];
 
         $pdf = PDF::loadView('pdf_view', $data);

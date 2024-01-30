@@ -15,9 +15,11 @@
     <p>Conductor: {{ $conductor }}</p>
     <p>Familiar / Acompañante:</p>
     <ul>
-        @foreach($familiar as $fam)
-            <li>{{ $fam }}</li>
-        @endforeach
+        @if(is_array($familiares) || is_object($familiares))
+            @foreach($familiares as $fam)
+                <li>{{ $fam }}</li>
+            @endforeach
+        @endif
     </ul>
 </body>
 </html>

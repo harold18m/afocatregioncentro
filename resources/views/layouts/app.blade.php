@@ -40,6 +40,7 @@
 
         .submit {
         background-color: #00906f;
+        border-radius: 2px;
         }
 
         label {
@@ -54,6 +55,7 @@
         padding: 5px;
         color: #8397bc;
         background-color: transparent;
+        border-radius: 2px;
         }
 
         .nosubmit {
@@ -61,6 +63,7 @@
         border: 1px solid #00906f;
         color : #00906f;
         font-weight: bold;
+        border-radius: 2px;
         }
 
         .inputstatic {
@@ -73,6 +76,7 @@
         padding: 5px;
         color: #8397bc;
         background-color: transparent;
+        border-radius: 2px;
         }
         select option {
         background-color: #fff; 

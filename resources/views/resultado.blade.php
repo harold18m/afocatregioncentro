@@ -41,8 +41,6 @@
                 <a href="{{ route('home') }}" class="nosubmit px-4 py-2 mb-2 md:mb-0 md:mr-5 w-full md:w-1/2 text-center">Regresar</a>
                 <button onclick="location.href='{{ route('gestion-permiso') }}'" class="submit px-4 py-2 text-white w-full md:w-1/2 text-center">Generar Permiso</button>
             </div>
-           <p>* Próximamente podrás generar tus permisos 🧑‍💻 </p>
-           <p> Lamentamos los inconvenientes</p>
         @else
             <!-- Placa no encontrada, muestra el mensaje de error -->
             <div>
@@ -53,7 +51,7 @@
             <p class="text-center m-5">{{ $result['eventoString'] }}</p>
             <div class="text-center my-4 flex flex-col md:flex-row justify-around">
                 <a href="{{ route('home') }}" class="nosubmit px-4 py-2 mb-2 md:mb-0 md:mr-5 w-full md:w-1/2 text-center">Nueva Consulta</a>
-                <a href="https://wa.me/51999991918?text=Deseo%20Comprar%20un%20CAT" class="submit carita px-4 py-2 text-white w-full md:w-1/2">
+                <a href="https://wa.me/51999991918?text=Deseo%20Comprar%20un%20CAT" target="_blank" class="submit carita px-4 py-2 text-white w-full md:w-1/2">
                     <span>
                         <img src="{{ asset('img/cc-happy-01-05.svg') }}" />
                     </span> 
