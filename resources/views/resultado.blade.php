@@ -27,11 +27,11 @@
             </div>
             <div class="form-group">
                 <label for="vigencia_desde" class="block  text-sm ">Vigencia desde:</label>
-                <input type="date" id="vigencia_desde" class="shadow appearance-none border  border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" value="{{ DateTime::createFromFormat('d/m/Y', $result['returnObject']['vigenciadesde'])->format('Y-m-d') }}" onkeydown="return false;">
+                <input type="date" id="vigencia_desde" class="shadow appearance-none border  border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" value="{{ DateTime::createFromFormat('d/m/Y', $result['returnObject']['vigenciadesde'])->format('Y-m-d') }}" onkeydown="return false;" readonly>
             </div>
             <div class="form-group">
                 <label for="vigencia_hasta" class="block  text-sm ">Vigencia hasta:</label>
-                <input type="date" id="vigencia_hasta" class="shadow appearance-none border  border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" value="{{ DateTime::createFromFormat('d/m/Y', $result['returnObject']['vigenciahasta'])->format('Y-m-d') }}" onkeydown="return false;">
+                <input type="date" id="vigencia_hasta" class="shadow appearance-none border  border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" value="{{ DateTime::createFromFormat('d/m/Y', $result['returnObject']['vigenciahasta'])->format('Y-m-d') }}" onkeydown="return false;" readonly>
             </div>
             <div class="form-group">
                 <label for="estado" class="block  text-sm ">Estado:</label>
@@ -39,7 +39,7 @@
             </div>
             <div class="text-center my-4 flex flex-col md:flex-row justify-around">
                 <a href="{{ route('home') }}" class="nosubmit px-4 py-2 mb-2 md:mb-0 md:mr-5 w-full md:w-1/2 text-center">Regresar</a>
-                <button onclick="location.href='{{ route('gestion-permiso') }}'" class="submit px-4 py-2 text-white w-full md:w-1/2 text-center" disabled>Generar Permiso</button>
+                <button onclick="location.href='{{ route('gestion-permiso') }}'" class="submit px-4 py-2 text-white w-full md:w-1/2 text-center">Generar Permiso</button>
             </div>
            <p>* Próximamente podrás generar tus permisos 🧑‍💻 </p>
            <p> Lamentamos los inconvenientes</p>
