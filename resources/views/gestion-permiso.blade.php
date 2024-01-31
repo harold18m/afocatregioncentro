@@ -76,30 +76,58 @@
                 let i = 0;
                 $('#addFamiliar').click(function(e) {
                     e.preventDefault();
-                    i++;$('#familiares').append('<div class="form-group relative"><label for=id="familiar' + i + '" class="block text-sm">Familiar / Acompañante:</label><input type="text" id="familiar' + i + '" name="familiar[]" class="shadow appearance-none border border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent pr-10"><span class="removeFamiliar absolute right-2 top-4 mt-3 mr-2 cursor-pointer"><i class="fas fa-times text-red-500"></i></span></input>');
+                    if (i >= 4) {
+                        alert('No puedes agregar más de 4 familiares');
+                        return;
+                    }
+                    i++;
+                    $('#familiares').append('<div class="form-group relative"><label for=id="familiar' + i + '" class="block text-sm">Familiar / Acompañante:</label><input type="text" id="familiar' + i + '" name="familiar[]" class="shadow appearance-none border border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent pr-10"><span class="removeFamiliar absolute right-2 top-4 mt-3 mr-2 cursor-pointer"><i class="fas fa-times text-red-500"></i></span></input>');
                 });
 
                 // Cuando se hace clic en el botón de eliminar
                 $('#familiares').on('click', '.removeFamiliar', function(e) {
                     e.preventDefault();
                     $(this).parent().remove();
+                    i--;
                 });
             });
-        </script>
-        <script>
-        document.getElementById('fechaInicio').addEventListener('change', function() {
-            document.getElementById('fechaFin').min = this.value;
-        });
 
-        document.getElementById('fechaFin').addEventListener('change', function() {
-            var fechaInicio = new Date(document.getElementById('fechaInicio').value);
-            var fechaFin = new Date(this.value);
+            document.getElementById('fechaInicio').addEventListener('change', function() {
+                document.getElementById('fechaFin').min = this.value;
+            });
 
-            if (fechaFin < fechaInicio) {
-                alert('La fecha de fin no puede ser anterior a la fecha de inicio');
-                this.value = '';
-            }
-        });
+            document.getElementById('fechaFin').addEventListener('change', function() {
+                var fechaInicio = new Date(document.getElementById('fechaInicio').value);
+                var fechaFin = new Date(this.value);
+
+                if (fechaFin < fechaInicio) {
+                    alert('La fecha de fin no puede ser anterior a la fecha de inicio');
+                    this.value = '';
+                }
+            });
+
+            // Establecer la fecha mínima para la fecha de inicio
+            var today = new Date().toISOString().split('T')[0];
+            document.getElementById('fechaInicio').setAttribute('min', today);
+
+            document.getElementById('formPermiso').addEventListener('submit', function(e) {
+                var fechaInicio = new Date(document.getElementById('fechaInicio').value);
+                var fechaFin = new Date(document.getElementById('fechaFin').value);
+                var conductor = document.getElementById('conductor').value;
+                var familiares = document.getElementsByName('familiar[]');
+
+                if (fechaFin < fechaInicio) {
+                    alert('La fecha de fin no puede ser anterior a la fecha de inicio');
+                    e.preventDefault();
+                    return;
+                }
+
+                if (conductor.trim() === '') {
+                    alert('El campo conductor no puede estar vacío');
+                    e.preventDefault();
+                    return;
+                }
+            });
         </script>
     </main>
     <style>
@@ -137,10 +165,5 @@
         transform: translateY(-50%) rotate(180deg);
     }
     </style>
-    <script>
-        document.querySelector('#destino').addEventListener('click', function() {
-            document.querySelector('.select-icon').classList.toggle('rotated');
-        });
-    </script>
     @include('components.footer')
 @endsection
