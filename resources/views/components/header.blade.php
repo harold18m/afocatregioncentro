@@ -9,7 +9,7 @@
     ?>
     <div class="header">
         <a href="https://www.afocatregioncentro.pe/">
-        <img src="data:image/svg+xml;base64,{{ $svgBase65 }}" alt="Logo" class="mx-auto mb-2" />
+        <img src="data:image/svg+xml;base64,{{ $svgBase65 }}" alt="Logo" class="logo my-5" />
         </a>
     </div>
 </header>
