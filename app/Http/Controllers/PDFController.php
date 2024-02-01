@@ -20,7 +20,6 @@ class PDFController extends Controller
         ];
 
         $pdf = PDF::loadView('pdf_view', $data);
-
         return $pdf->download('permiso-afocat.pdf');
     }
 }

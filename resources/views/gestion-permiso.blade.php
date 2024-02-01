@@ -30,24 +30,28 @@
                     <div class="select-container relative">
                         <select name="destino" id="destino" class="shadow appearance-none border border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent pr-10">
                             <option value="Huancayo">Huancayo</option>
+                            <option value="Concepción">Concepción</option>
+                            <option value="Chanchamayo">Chanchamayo</option>
+                            <option value="Jauja">Jauja</option>
+                            <option value="Junín">Junín</option>
+                            <option value="Satipo">Satipo</option>
+                            <option value="Tarma">Tarma</option>
+                            <option value="Yauli">Yauli</option>
                             <option value="Chupaca">Chupaca</option>
-                            <option value="Chilca">Chilca</option>
-                            <option value="El Tambo">El Tambo</option>
-                            <option value="San Agustín de Cajas">San Agustín de Cajas</option>
-                            <option value="San Jerónimo de Tunán">San Jerónimo de Tunán</option>
-                            <option value="Sapallanga">Sapallanga</option>
-                            <option value="Sicaya">Sicaya</option>
-                            <option value="Viques">Viques</option>
-                            <option value="Otro">Otro</option> bot
+                            <option value="Otro">Otro</option>
                         </select>
                         <i class="fas fa-chevron-down absolute right-0 mr-2 cursor-pointer select-icon"></i>
+                    </div>
+                    <div id="otroDestino" class="mt-4" style="display: none;">
+                        <label for="destinoEspecifico" class="block text-sm ">Nuevo destino:</label>
+                        <input type="text" id="destinoEspecifico" name="destinoEspecifico" class="shadow appearance-none border   border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent">
                     </div>
                 </div>
                 <div class="flex flex-wrap -mx-2">
                     <div   div class="w-full md:w-1/2 px-2">
                         <div class="form-group">
                             <label for="fechaInicio" class="block text-sm ">Fecha de inicio:</label>
-                            <input type="date" id="fechaInicio" name="fechaInicio" class="shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent  " value="{{ date('Y-m-d') }}"  required>
+                            <input type="date" id="fechaInicio" name="fechaInicio" class="shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" value="{{ date('Y-m-d', strtotime('+1 day')) }}"  required>
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 px-2">
@@ -92,6 +96,15 @@
                 });
             });
 
+            document.getElementById('destino').addEventListener('change', function() {
+                var otroDestino = document.getElementById('otroDestino');
+                if (this.value === 'Otro') {
+                    otroDestino.style.display = 'block';
+                } else {
+                    otroDestino.style.display = 'none';
+                }
+            });
+
             document.getElementById('fechaInicio').addEventListener('change', function() {
                 document.getElementById('fechaFin').min = this.value;
             });
@@ -106,9 +119,10 @@
                 }
             });
 
-            // Establecer la fecha mínima para la fecha de inicio
-            var today = new Date().toISOString().split('T')[0];
-            document.getElementById('fechaInicio').setAttribute('min', today);
+            var today = new Date();
+            today.setDate(today.getDate() + 1);
+            var tomorrow = today.toISOString().split('T')[0];
+            document.getElementById('fechaInicio').setAttribute('min', tomorrow);
 
             document.getElementById('formPermiso').addEventListener('submit', function(e) {
                 var fechaInicio = new Date(document.getElementById('fechaInicio').value);

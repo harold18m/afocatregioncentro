@@ -15,7 +15,6 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            margin: 0;
         }
         img {
             width: 85px;
