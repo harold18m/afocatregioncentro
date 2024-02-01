@@ -5,8 +5,15 @@
     <main class="contenedor w-11/12 md:w-1/2  my-5 mx-auto py-5 px-10 text-white">
 
         @if (is_array($result) && $result['eventoInteger'] == 1)
+        <?php
+        // Leer el contenido del archivo SVG
+        $svgContent2 = file_get_contents(public_path('img/cc-nike-01-06.svg'));
+
+        // Codificar el contenido del archivo SVG en base64
+        $svgBase66 = base64_encode($svgContent2);
+        ?>
         <div>
-            <img src="{{ asset('img/cc-nike-01-06.svg') }}" alt="" class="mx-auto mb-2" />
+        <img src="data:image/svg+xml;base64,{{ $svgBase66 }}" class="mx-auto mb-2" />
         </div>
         <h1 class="text-4xl mb-3 font-bold text-center">Seguridad Activada</h1>
         <hr class="border-t-2 border-green-500 mb-5 w-1/3 mx-auto" />
