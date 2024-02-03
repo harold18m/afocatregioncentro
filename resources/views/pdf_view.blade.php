@@ -44,7 +44,7 @@
       color: #539E61;
     }
     .familiares {
-      margin: 0px;
+      margin: 0px 0px 0px 55px;
     }
     .familiares span {
       font-weight: bold;
@@ -80,7 +80,7 @@
 <body>
   <header>
     <div class="header">
-      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 793px;">
+      <img src="https://afocatregioncentro.pe/power/wp-admin/images/header2.png" style="width: 793px;">
     </div>
   </header>
   <div class="permiso">
@@ -111,7 +111,7 @@
         </div>
 
         <span style="margin-left: 55px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
-LESIONES</span><span style="margin-left: 55px;">PERSONALES EN CUALQUIER PARTE DEL TERRITORIO NACIONAL.</span>
+</span><span style="margin-left: 55px;">LESIONES PERSONALES EN CUALQUIER PARTE DEL TERRITORIO NACIONAL.</span>
 
       <div class="fecha">
         <p>Se solicita, a las autoridades de control de Tránsito y Transporte, brindar las facilidades del

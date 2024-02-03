@@ -9,10 +9,11 @@ class PDFController extends Controller
 {
     public function generatePDF(Request $request)
     {
-        // Establecer la configuración regional en español para Lima, Perú
-        setlocale(LC_TIME, 'es_PE.utf8');
+        $options = new \Dompdf\Options();
+        $options->set('isRemoteEnabled', true);
+        $pdf = new \Dompdf\Dompdf($options);
 
-        // Obtener datos del formulario
+
         $placa = strtoupper($request->input('placa'));
         $cat = strtoupper($request->input('cat'));
         $destino = strtoupper($request->input('destino'));
@@ -36,9 +37,6 @@ class PDFController extends Controller
         // Obtener familiares y convertirlos a mayúsculas
         $familiaresInput = $request->input('familiar');
         $familiares = is_array($familiaresInput) ? array_map('strtoupper', $familiaresInput) : strtoupper($familiaresInput);
-
-        // Restablecer la configuración regional a la predeterminada
-        setlocale(LC_TIME, '');
 
         // Pasar datos a la vista
         $data = [
