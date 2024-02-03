@@ -39,6 +39,7 @@
     .permiso {
       text-align: center;
       font-size: 16px;
+      margin-bottom: 0px;
     }
     .respuesta {
       color: #539E61;
