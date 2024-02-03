@@ -126,7 +126,7 @@ caso. Atentamente;</p>
     </main>
     <footer>
       <div class="footer">
-        <img width="180" src="https://afocatregioncentro.pe/power/wp-admin/images/firma.png">
+        <img width="180" style="margin-bottom: 0px" src="https://afocatregioncentro.pe/power/wp-admin/images/firma.png">
         <img src="https://afocatregioncentro.pe/power/wp-admin/images/footer.png" alt="footer" style="width: 793px;">
       </div>
     </footer>
