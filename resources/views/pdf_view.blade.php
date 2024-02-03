@@ -85,9 +85,9 @@
             @endforeach
         @endif 
       </div>
-      
+
         <div class="ruler">
-          <img src="{{ asset('img/ruler.png') }}" alt="ruler" style="width: 720px;">
+          <img src="{{ asset('img/ruler2.png') }}" alt="ruler" style="width: 720px;">
         </div>
 
         <span>POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
@@ -99,7 +99,7 @@ caso. Atentamente;</p>
         <div class="fechaActual"><span>Huancayo, 12 de enero del año 2024</span></div>
       </div>
       <div class="firma">
-        <img src="{{ asset('img/firma.png') }}" alt="firma" style="width: 370px;">
+        <img src="{{ asset('img/firma2.png') }}" alt="firma" style="width: 370px;">
       </div>
     </main>
     <footer>
