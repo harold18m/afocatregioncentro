@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PERMISO AFOCAT</title>
   <style>
+    @page {
+                margin: 0px;
+                padding: 0px;
+            }
+    .footer {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+        background-color: orange;
+        text-align: center;
+    }
+      
     body {
       font-family: 'Roboto', sans-serif;
       font-size: 15px;
@@ -99,12 +113,12 @@ caso. Atentamente;</p>
         <div class="fechaActual"><span>Huancayo, 12 de enero del año 2024</span></div>
       </div>
       <div class="firma">
-        <img src="{{ asset('img/firma2.png') }}" alt="firma" style="width: 370px;">
+        <img src="{{ asset('img/footer.png') }}" alt="firma" style="width: 720px;">
       </div>
     </main>
     <footer>
       <div class="footer">
-        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 710px;">
+        <!-- <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 710px;"> -->
       </div>
     </footer>
 </body>
