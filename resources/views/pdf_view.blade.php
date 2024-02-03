@@ -60,7 +60,7 @@
 <body>
   <header>
     <div class="header">
-      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 740px;">
+      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 710px;">
     </div>
   </header>
   <div class="permiso">
@@ -85,11 +85,11 @@
             @endforeach
         @endif 
       </div>
+      
         <div class="ruler">
           <img src="{{ asset('img/ruler.png') }}" alt="ruler" style="width: 720px;">
-      </div>
-        <div style="background-image: url('{{ asset('img/ruler.png') }}');">
         </div>
+
         <span>POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
 LESIONES PERSONALES EN CUALQUIER PARTE DEL TERRITORIO NACIONAL.</span>
 
@@ -104,7 +104,7 @@ caso. Atentamente;</p>
     </main>
     <footer>
       <div class="footer">
-        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 720px;">
+        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 710px;">
       </div>
     </footer>
 </body>
