@@ -9,12 +9,6 @@
                 margin: 0px;
                 padding: 0px;
             }
-    header {
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-    }
     .footer {
         position: fixed;
         bottom: 0px;
@@ -110,7 +104,7 @@
       </div>
 
         <div class="ruler">
-          <img src="{{ asset('img/ruler.png') }}" style="width: 700px;">
+          <img src="{{ asset('img/ruler2.png') }}" style="width: 700px;">
         </div>
 
         <span style="margin-left: 30px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
