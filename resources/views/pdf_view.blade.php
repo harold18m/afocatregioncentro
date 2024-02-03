@@ -23,8 +23,8 @@
     }
 
     body p {
-      margin-left: 60px;
-      margin-right: 60px;
+      margin-left: 55px;
+      margin-right: 55px;
       padding: 0;
       color: #33373B;
     }
@@ -44,7 +44,7 @@
       color: #539E61;
     }
     .familiares {
-      margin-bottom: 0px;
+      margin: 0px;
     }
     .familiares span {
       font-weight: bold;
@@ -70,7 +70,7 @@
     .fechaActual {
       text-align: right;
       margin-top: 10px;
-      margin-right: 60px;
+      margin-right: 55px;
     }
     .firma, .ruler {
       text-align : center;
@@ -98,7 +98,7 @@
             DESTINO A LA PROVINCIA DE:<span class="respuesta"> {{ $destino }} y VICEVERSA</span>; el día {{ $diaInicio }} del mes {{ $mesInicio}} del año {{ $anioInicio }}; RETORNO el día, {{ $diaFin }} del mes {{ $mesFin }} del año {{ $anioFin }}</span> por motivos FAMILIARES </p>
       </div>
       <div class="acompanantes">
-        <span class="respuesta" style="font-weight: bold; margin-left: 30px;">CONDUCTOR: {{ $conductor }} </span>
+        <span class="respuesta" style="font-weight: bold; margin-left: 55px;">CONDUCTOR: {{ $conductor }} </span>
         @if(is_array($familiares) || is_object($familiares))
             @foreach($familiares as $fam)
             <p class="familiares"><span>ACOMPAÑANTE:</span> {{ $fam }} </p> 
@@ -110,8 +110,8 @@
           <img src="{{ asset('img/ruler2.png') }}" style="width: 700px;">
         </div>
 
-        <span style="margin-left: 60px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
-LESIONES</span><span style="margin-left: 60px;">PERSONALES EN CUALQUIER PARTE DEL TERRITORIO NACIONAL.</span>
+        <span style="margin-left: 55px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
+LESIONES</span><span style="margin-left: 55px;">PERSONALES EN CUALQUIER PARTE DEL TERRITORIO NACIONAL.</span>
 
       <div class="fecha">
         <p>Se solicita, a las autoridades de control de Tránsito y Transporte, brindar las facilidades del
