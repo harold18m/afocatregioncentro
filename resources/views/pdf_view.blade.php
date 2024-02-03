@@ -25,7 +25,7 @@
     }
 
     body p {
-      margin: 0;
+      margin-left: 20px;
       padding: 0;
       color: #33373B;
     }
@@ -68,13 +68,14 @@
     .fechaActual {
       text-align: right;
       margin-top: 10px;
+      margin-right: 20px;
     }
   </style>
 </head>
 <body>
   <header>
     <div class="header">
-      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 710px;">
+      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 740px;">
     </div>
   </header>
   <div class="permiso">
