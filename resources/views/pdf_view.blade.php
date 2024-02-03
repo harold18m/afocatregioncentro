@@ -92,7 +92,7 @@
   </header>
   <div class="permiso">
       <span>PERMISO FUERA DE RUTA</span>
-      <span>N° 751</span>
+      <span>N° {{ $numeroAleatorio }}</span>
   </div>
     <main>
       <div class="placa">
@@ -123,7 +123,7 @@
       <div class="fecha">
         <p>Se solicita, a las autoridades de control de Tránsito y Transporte, brindar las facilidades del
 caso. Atentamente;</p>
-        <div class="fechaActual"><span>Huancayo, 12 de enero del año 2024</span></div>
+        <div class="fechaActual"><span>Huancayo, {{ $dia }} de {{ $mes }} del año {{ $anio }}</span></div>
       </div>
     </main>
     <footer>

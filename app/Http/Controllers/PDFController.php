@@ -12,7 +12,7 @@ class PDFController extends Controller
         $options = new \Dompdf\Options();
         $options->set('isRemoteEnabled', true);
         $pdf = new \Dompdf\Dompdf($options);
-
+        $numeroAleatorio = rand(10000, 99999);
 
         $placa = strtoupper($request->input('placa'));
         $cat = strtoupper($request->input('cat'));
@@ -35,6 +35,11 @@ class PDFController extends Controller
         $mesFin = $this->getSpanishMonth($fechaFin->format('n'));
         $mesFin = strtoupper($mesFin);
         $anioFin = $fechaFin->format('Y');
+
+        setlocale(LC_TIME, 'es_ES.UTF-8');
+        $dia = strftime('%d');
+        $mes = strftime('%B');
+        $anio = strftime('%Y');
 
         $conductor = strtoupper($request->input('conductor'));
 
@@ -61,7 +66,11 @@ class PDFController extends Controller
             'mesFin' => $mesFin,
             'anioFin' => $anioFin,
             'conductor' => $conductor,
-            'familiares' => $familiares
+            'familiares' => $familiares,
+            'numeroAleatorio' => $numeroAleatorio,
+            'dia' => $dia,
+            'mes' => $mes,
+            'anio' => $anio
         ];
 
         // Generar PDF
