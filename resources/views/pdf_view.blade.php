@@ -86,7 +86,7 @@
         @endif 
       </div>
         <div class="ruler">
-          <img src="{{ asset('img/ruler.png') }}" alt="ruler" style="width: 740px;">
+          <img src="{{ asset('img/ruler.png') }}" alt="ruler" style="width: 720px;">
       </div>
         <div style="background-image: url('{{ asset('img/ruler.png') }}');">
         </div>
@@ -104,7 +104,7 @@ caso. Atentamente;</p>
     </main>
     <footer>
       <div class="footer">
-        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 740px;">
+        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 720px;">
       </div>
     </footer>
 </body>
