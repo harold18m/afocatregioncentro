@@ -40,8 +40,15 @@ class PDFController extends Controller
 
         // Obtener familiares y convertirlos a mayúsculas
         $familiaresInput = $request->input('familiar');
+
+        // Verificar si $familiaresInput es null y proporcionar un array vacío en ese caso
+        $familiaresInput = is_array($familiaresInput) ? $familiaresInput : [];
+        
         $familiares = is_array($familiaresInput) ? array_map('strtoupper', $familiaresInput) : strtoupper($familiaresInput);
+        
+        // Asegurarse de que haya al menos 4 elementos en el array resultante
         $familiares = array_pad($familiares, 4, "....................................................");
+        
         // Pasar datos a la vista
         $data = [
             'placa' => $placa,
