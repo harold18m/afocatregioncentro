@@ -63,6 +63,7 @@
     .fecha {
       margin-top: 20px;
       margin-bottom: 10px;
+      
     }
 
     .fechaActual {
@@ -105,7 +106,7 @@
       </div>
 
         <div class="ruler">
-          <img src="{{ asset('img/ruler2.png') }}" style="">
+          <img src="{{ asset('img/ruler2.png') }}" style="width: 80%; height: 80%">
         </div>
 
         <span style="margin-left: 30px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
