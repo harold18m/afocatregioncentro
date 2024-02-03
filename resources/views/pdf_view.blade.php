@@ -102,7 +102,7 @@ caso. Atentamente;</p>
     </main>
     <footer>
       <div class="footer">
-        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 740px; height: 100%;">
+        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 740px;">
       </div>
     </footer>
 </body>
