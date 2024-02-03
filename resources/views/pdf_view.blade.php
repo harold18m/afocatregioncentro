@@ -59,7 +59,9 @@
       margin-top: 10px;
       margin-bottom: 5px;
     }
-
+    .placa p {
+      font-size: 15px;
+    }
     .acompanantes {
       margin-top: 20px;
       margin-bottom: 15px;
