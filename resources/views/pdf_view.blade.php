@@ -19,7 +19,7 @@
       
     body {
       font-family: 'Roboto', sans-serif;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     body p {
