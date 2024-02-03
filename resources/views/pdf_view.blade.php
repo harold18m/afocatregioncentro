@@ -47,16 +47,17 @@
     .familiares span {
       font-weight: bold;
       color: #000;
+      margin-bottom: 0px;
     }
 
     .placa {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     .acompanantes {
       margin-top: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
     }
 
     .fecha {
@@ -98,13 +99,13 @@
         <span class="respuesta" style="font-weight: bold; margin-left: 30px;">CONDUCTOR: {{ $conductor }} </span>
         @if(is_array($familiares) || is_object($familiares))
             @foreach($familiares as $fam)
-            <p class="familiares" style="margin-bottom=3px"><span>ACOMPAÑANTE:</span> {{ $fam }} </p> 
+            <p class="familiares"><span>ACOMPAÑANTE:</span> {{ $fam }} </p> 
             @endforeach
         @endif 
       </div>
 
         <div class="ruler">
-          <img src="{{ asset('img/ruler2.png') }}" style="width: 700px;">
+          <img src="{{ asset('img/ruler3.png') }}" style="width: 640px;">
         </div>
 
         <span style="margin-left: 30px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
