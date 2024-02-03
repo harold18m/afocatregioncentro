@@ -57,7 +57,7 @@ class PDFController extends Controller
 
         // Generar PDF
         $pdf = PDF::loadView('pdf_view', $data);
-        return $pdf->download('permiso-afocat.pdf');
+        return $pdf->download('PERMISO-AFOCAT.pdf');
     }
     private function getSpanishMonth($monthNumber)
 {
