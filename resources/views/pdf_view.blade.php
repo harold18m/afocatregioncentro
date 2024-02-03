@@ -76,7 +76,7 @@
 <body>
   <header>
     <div class="header">
-      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 760px;">
+      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 770px;">
     </div>
   </header>
   <div class="permiso">
@@ -107,7 +107,7 @@
         </div>
 
         <span style="margin-left: 30px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
-LESIONES PERSONALES EN CUALQUIER PARTE DEL TERRITORIO NACIONAL.</span>
+LESIONES </br>PERSONALES EN CUALQUIER PARTE DEL TERRITORIO NACIONAL.</span>
 
       <div class="fecha">
         <p>Se solicita, a las autoridades de control de Tránsito y Transporte, brindar las facilidades del
@@ -115,7 +115,7 @@ caso. Atentamente;</p>
         <div class="fechaActual"><span>Huancayo, 12 de enero del año 2024</span></div>
       </div>
       <div class="firma">
-        <img src="{{ asset('img/footer.png') }}" alt="firma" style="width: 750px;">
+        <img src="{{ asset('img/footer.png') }}" alt="firma" style="width: 780px;">
       </div>
     </main>
     <footer>
