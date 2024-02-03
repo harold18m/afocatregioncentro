@@ -113,12 +113,12 @@ caso. Atentamente;</p>
         <div class="fechaActual"><span>Huancayo, 12 de enero del año 2024</span></div>
       </div>
       <div class="firma">
-        <img src="{{ asset('img/footer.png') }}" alt="firma" style="width: 793px;">
+        <img src="{{ asset('img/ruler.png') }}" alt="firma" style="width: 500px;">
       </div>
     </main>
     <footer>
       <div class="footer">
-        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 710px;">
+        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 793px;">
       </div>
     </footer>
 </body>
