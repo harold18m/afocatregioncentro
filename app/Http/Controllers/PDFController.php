@@ -19,7 +19,7 @@ class PDFController extends Controller
         $destino = strtoupper($request->input('destino'));
         $destinoEspecifico = strtoupper($request->input('destinoEspecifico'));
 
-        if ($destino === 'Otro') {
+        if ($destino === 'OTRO') {
             $destino = $destinoEspecifico;
         }
         // Obtener la fecha de inicio y procesarla
