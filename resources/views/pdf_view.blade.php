@@ -69,7 +69,6 @@
 
     .fechaActual {
       text-align: right;
-      margin-top: 10px;
       margin-right: 55px;
     }
     .firma, .ruler {
