@@ -125,7 +125,7 @@ caso. Atentamente;</p>
     </main>
     <footer>
       <div class="footer">
-        <img src="{{ asset('img/footer.png') }}" alt="footer" style="width: 793px;">
+        <img src="https://afocatregioncentro.pe/power/wp-admin/images/footer.png" alt="footer" style="width: 793px;">
       </div>
     </footer>
 </body>
