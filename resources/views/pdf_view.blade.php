@@ -23,8 +23,8 @@
     }
 
     body p {
-      margin-left: 30px;
-      margin-right: 30px;
+      margin-left: 60px;
+      margin-right: 60px;
       padding: 0;
       color: #33373B;
     }
@@ -43,11 +43,12 @@
     .respuesta {
       color: #539E61;
     }
-
+    .familiares {
+      margin-bottom: 0px;
+    }
     .familiares span {
       font-weight: bold;
       color: #000;
-      margin-bottom: 0px;
     }
 
     .placa {
@@ -69,7 +70,7 @@
     .fechaActual {
       text-align: right;
       margin-top: 10px;
-      margin-right: 30px;
+      margin-right: 60px;
     }
     .firma, .ruler {
       text-align : center;
@@ -88,8 +89,8 @@
   </div>
     <main>
       <div class="placa">
-        <p>Que, el vehículo con CAT vigente con las siguientes características:</p>
-        <p><span>PLACA DE RODAJE:</span><span class="respuesta"> {{ $placa }} </span><span>CAT N°</span><span class="respuesta"> {{ $cat }} </span></p>
+        <p style="margin-bottom: 0px;">Que, el vehículo con CAT vigente con las siguientes características:</p>
+        <p style="margin-top: 0px;"><span>PLACA DE RODAJE:</span><span class="respuesta"> {{ $placa }} </span><span>CAT N°</span><span class="respuesta"> {{ $cat }} </span></p>
       </div>
       <div class="destino">
         <p>Se encuentra registrado en el padrón de afiliados de la AFOCAT REGION CENTRO; por lo
@@ -109,8 +110,8 @@
           <img src="{{ asset('img/ruler2.png') }}" style="width: 700px;">
         </div>
 
-        <span style="margin-left: 30px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
-LESIONES</span><span style="margin-left: 30px;">PERSONALES EN CUALQUIER PARTE DEL TERRITORIO NACIONAL.</span>
+        <span style="margin-left: 60px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
+LESIONES</span><span style="margin-left: 60px;">PERSONALES EN CUALQUIER PARTE DEL TERRITORIO NACIONAL.</span>
 
       <div class="fecha">
         <p>Se solicita, a las autoridades de control de Tránsito y Transporte, brindar las facilidades del
