@@ -17,7 +17,11 @@ class PDFController extends Controller
         $placa = strtoupper($request->input('placa'));
         $cat = strtoupper($request->input('cat'));
         $destino = strtoupper($request->input('destino'));
+        $destinoEspecifico = strtoupper($request->input('destinoEspecifico'));
 
+        if ($destino === 'Otro') {
+            $destino = $destinoEspecifico;
+        }
         // Obtener la fecha de inicio y procesarla
         $fechaInicio = new \DateTime($request->input('fechaInicio'));
         $diaInicio = $fechaInicio->format('d');
@@ -38,7 +42,7 @@ class PDFController extends Controller
         $familiaresInput = $request->input('familiar');
         $familiares = is_array($familiaresInput) ? array_map('strtoupper', $familiaresInput) : strtoupper($familiaresInput);
         // Asegúrate de que el array $familiares tenga 4 elementos
-        $familiares = array_pad($familiares, 4, ".....................................");
+        $familiares = array_pad($familiares, 4, "....................................................");
         // Pasar datos a la vista
         $data = [
             'placa' => $placa,
