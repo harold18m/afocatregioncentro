@@ -71,7 +71,7 @@
       margin-top: 10px;
       margin-right: 30px;
     }
-    .firma {
+    .firma, .ruler {
       text-align : center;
     }
   </style>
