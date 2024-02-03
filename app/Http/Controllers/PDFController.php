@@ -41,7 +41,6 @@ class PDFController extends Controller
         // Obtener familiares y convertirlos a mayúsculas
         $familiaresInput = $request->input('familiar');
         $familiares = is_array($familiaresInput) ? array_map('strtoupper', $familiaresInput) : strtoupper($familiaresInput);
-        $familiares = isset($_POST['familiares']) ? $_POST['familiares'] : array();
         $familiares = array_pad($familiares, 4, "....................................................");
         // Pasar datos a la vista
         $data = [
