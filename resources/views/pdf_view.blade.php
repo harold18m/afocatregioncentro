@@ -14,8 +14,6 @@
         bottom: 0px;
         left: 0px;
         right: 0px;
-        height: 50px;
-        background-color: orange;
         text-align: center;
     }
       
@@ -76,7 +74,7 @@
 <body>
   <header>
     <div class="header">
-      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 790px;">
+      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 795px;">
     </div>
   </header>
   <div class="permiso">
@@ -115,12 +113,12 @@ caso. Atentamente;</p>
         <div class="fechaActual"><span>Huancayo, 12 de enero del año 2024</span></div>
       </div>
       <div class="firma">
-        <img src="{{ asset('img/footer.png') }}" alt="firma" style="width: 800px;">
+        <img src="{{ asset('img/footer.png') }}" alt="firma" style="width: 793px;">
       </div>
     </main>
     <footer>
       <div class="footer">
-        <!-- <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 710px;"> -->
+        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 710px;">
       </div>
     </footer>
 </body>
