@@ -91,7 +91,7 @@
     </div>
   </header>
   <div class="permiso">
-      <span>PERMISO FUERA DE RUTA</span>
+      <span style="font-size: 18px">PERMISO FUERA DE RUTA</span>
       <span>N° {{ $numeroAleatorio }}</span>
   </div>
     <main>
