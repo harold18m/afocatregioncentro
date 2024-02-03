@@ -58,7 +58,7 @@
 <body>
   <header>
     <div class="header">
-      <img src="{{ asset('img/header.png') }}" alt="logo" style="width: 100%; height: 100%;">
+      <img src="{{ asset('img/header.png') }}" alt="logo" style="">
     </div>
   </header>
   <div class="permiso">
@@ -102,7 +102,7 @@ caso. Atentamente;</p>
     </main>
     <footer>
       <div class="footer">
-        <img src="{{ asset('img/footer.png') }}" alt="logo" style="width: 100%; height: 100%;">
+        <img src="{{ asset('img/footer.png') }}" alt="logo" style="">
       </div>
     </footer>
 </body>
