@@ -70,6 +70,8 @@
     .fechaActual {
       text-align: right;
       margin-right: 55px;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
     .firma, .ruler {
       text-align : center;
@@ -106,7 +108,7 @@
       </div>
 
         <div class="ruler">
-          <img src="https://afocatregioncentro.pe/power/wp-admin/images/ruler3.png" style="width: 700px;">
+          <img src="https://afocatregioncentro.pe/power/wp-admin/images/ruler3.png" style="width: 710px;">
         </div>
 
         <span style="margin-left: 55px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
