@@ -107,7 +107,7 @@
       </div>
 
         <div class="ruler">
-          <img src="{{ asset('img/ruler2.png') }}" style="width: 700px;">
+          <img src="https://afocatregioncentro.pe/power/wp-admin/images/ruler3.png" style="width: 700px;">
         </div>
 
         <span style="margin-left: 55px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
