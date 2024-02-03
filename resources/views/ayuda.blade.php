@@ -38,9 +38,7 @@
         <p>ACOMPAÑANTE:  YOLANDA CASTRO OCHA</p>
       </div>
       <div class="header">
-          <a href="https://www.afocatregioncentro.pe/">
               <img class="logo my-5" alt="logo" src="{{ asset('img/ruler.png') }}" />
-          </a>
       </div>
       <div>
         <p>POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
@@ -52,17 +50,14 @@ caso. Atentamente;</p>
         <p>Huancayo, 12 de enero del año 2024</p>
       </div>
       <div>
-        <img class="logo my-5" alt="logo" src="{{ asset('img/firma.png') }}" />
+        <img class="logo my-5" src="{{ asset('img/firma.png') }}" />
       </div>
     </main>
     <footer>
       <div>
-        <img class="logo my-5" alt="logo" src="{{ asset('img/footer.png') }}" />
+        <img class="logo my-5"  src="{{ asset('img/footer.png') }}" />
       </div>
     </footer>
   </header>
-    <div style="position: relative;">
-      <img class="logo my-5" alt="logo" src="{{ asset('img/borde.png') }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" />
-    </div>
 </body>
 </html>
