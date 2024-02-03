@@ -105,7 +105,7 @@
       </div>
 
         <div class="ruler">
-          <img src="{{ asset('img/ruler3.png') }}" style="">
+          <img src="{{ asset('img/ruler2.png') }}" style="">
         </div>
 
         <span style="margin-left: 30px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
