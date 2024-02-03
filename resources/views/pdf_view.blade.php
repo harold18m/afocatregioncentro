@@ -50,7 +50,10 @@
       font-weight: bold;
       color: #000;
     }
-
+    .destino {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
     .placa {
       margin-top: 10px;
       margin-bottom: 5px;
