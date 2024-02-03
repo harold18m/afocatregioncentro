@@ -19,7 +19,7 @@
       
     body {
       font-family: 'Roboto', sans-serif;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     body p {
@@ -53,7 +53,7 @@
 
     .placa {
       margin-top: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
 
     .acompanantes {
