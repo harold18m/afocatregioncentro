@@ -3,8 +3,15 @@
 @section('content')
     @include('components.header')
     <main class="contenedor w-11/12 md:w-1/2  my-5 mx-auto py-5 px-10 text-white">
+    <?php
+        // Leer el contenido del archivo SVG
+        $svgContent9 = file_get_contents(public_path('img/cc-map-01-06.svg'));
+
+        // Codificar el contenido del archivo SVG en base64
+        $mapa = base64_encode($svgContent9);
+        ?>
     <div>
-        <img src="{{ asset('img/cc-map-01-06.svg') }}" alt="Consulte su vigencia" class="mx-auto" />
+        <img src="data:image/svg+xml;base64,{{ $mapa }}" alt="Consulte su vigencia" class="mx-auto" />
     </div>
     <h1 class="text-4xl mb-3 font-bold text-center">Gestión Permiso</h1>
     <hr class="border-t-2 border-green-500 mb-5 w-1/3 mx-auto" />
