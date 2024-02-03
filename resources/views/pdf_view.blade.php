@@ -58,7 +58,7 @@
 <body>
   <header>
     <div class="header">
-      <img src="{{ asset('img/header.png') }}" alt="logo" style="">
+      <img src="{{ asset('img/header.png') }}" alt="logo" style="width: 740px;">
     </div>
   </header>
   <div class="permiso">
