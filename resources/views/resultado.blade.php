@@ -13,7 +13,7 @@
         $check = base64_encode($svgContent2);
         ?>
         <div>
-        <img src="data:image/svg+xml;base64,{{ $svgBase66 }}" class="mx-auto mb-2" />
+        <img src="data:image/svg+xml;base64,{{ $check }}" class="mx-auto mb-2" />
         </div>
         <h1 class="text-4xl mb-3 font-bold text-center">Seguridad Activada</h1>
         <hr class="border-t-2 border-green-500 mb-5 w-1/3 mx-auto" />
