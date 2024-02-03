@@ -25,7 +25,8 @@
     }
 
     body p {
-      margin-left: 20px;
+      margin-left: 30px;
+      margin-right: 30px;
       padding: 0;
       color: #33373B;
     }
@@ -68,14 +69,14 @@
     .fechaActual {
       text-align: right;
       margin-top: 10px;
-      margin-right: 20px;
+      margin-right: 30px;
     }
   </style>
 </head>
 <body>
   <header>
     <div class="header">
-      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 740px;">
+      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 760px;">
     </div>
   </header>
   <div class="permiso">
@@ -93,7 +94,7 @@
             DESTINO A LA PROVINCIA DE:<span class="respuesta"> {{ $destino }} y VICEVERSA</span>; el día {{ $diaInicio }} del mes {{ $mesInicio}} del año {{ $anioInicio }}; RETORNO el día, {{ $diaFin }} del mes {{ $mesFin }} del año {{ $anioFin }}</span> por motivos FAMILIARES </p>
       </div>
       <div class="acompanantes">
-        <span class="respuesta" style="font-weight: bold;">CONDUCTOR: {{ $conductor }} </span>
+        <span class="respuesta" style="font-weight: bold; margin-left: 30px;">CONDUCTOR: {{ $conductor }} </span>
         @if(is_array($familiares) || is_object($familiares))
             @foreach($familiares as $fam)
             <p class="familiares"><span>ACOMPAÑANTE:</span> {{ $fam }} </p> 
@@ -105,7 +106,7 @@
           <img src="{{ asset('img/ruler2.png') }}" alt="ruler" style="width: 720px;">
         </div>
 
-        <span>POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
+        <span style="margin-left: 30px;">POR LO QUE LA AFOCAT REGION CENTRO COBERTURA EVENTUALES ACCIDENTES CON
 LESIONES PERSONALES EN CUALQUIER PARTE DEL TERRITORIO NACIONAL.</span>
 
       <div class="fecha">
@@ -114,7 +115,7 @@ caso. Atentamente;</p>
         <div class="fechaActual"><span>Huancayo, 12 de enero del año 2024</span></div>
       </div>
       <div class="firma">
-        <img src="{{ asset('img/footer.png') }}" alt="firma" style="width: 720px;">
+        <img src="{{ asset('img/footer.png') }}" alt="firma" style="width: 750px;">
       </div>
     </main>
     <footer>
