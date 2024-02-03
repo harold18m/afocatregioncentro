@@ -15,7 +15,9 @@
       padding: 0;
       color: #33373B;
     }
-
+|   img {
+      margin-horizontal: auto;
+    }
     span {
       font-weight: bold;
       color: #33373B;
@@ -58,7 +60,7 @@
 <body>
   <header>
     <div class="header">
-      <img src="{{ asset('img/header.png') }}" alt="logo" style="width: 740px;">
+      <img src="{{ asset('img/header2.png') }}" alt="logo" style="width: 740px;">
     </div>
   </header>
   <div class="permiso">
@@ -84,7 +86,7 @@
         @endif 
       </div>
         <div class="ruler">
-          <img src="{{ asset('img/ruler.png') }}" alt="ruler" style="width: 100%; height: 100%;">
+          <img src="{{ asset('img/ruler.png') }}" alt="ruler" style="width: 100%;">
       </div>
         <div style="background-image: url('{{ asset('img/ruler.png') }}');">
         </div>
@@ -97,7 +99,7 @@ caso. Atentamente;</p>
         <div class="fechaActual"><span>Huancayo, 12 de enero del año 2024</span></div>
       </div>
       <div class="firma">
-        <img src="{{ asset('img/firma.png') }}" alt="firma" style="width: 100%; height: 100%;">
+        <img src="{{ asset('img/firma.png') }}" alt="firma" style="width: 100%;">
       </div>
     </main>
     <footer>

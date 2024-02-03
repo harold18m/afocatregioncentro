@@ -4,7 +4,7 @@
     @include('components.header')
     <main class="contenedor w-11/12 md:w-1/2  my-5 mx-auto py-5 px-10 text-white">
     <div>
-        <img src="{{ asset('img/cc-map-01-06.svg') }}" alt="Consulte su vigencia" class="mx-auto  2" />
+        <img src="{{ asset('img/cc-map-01-06.svg') }}" alt="Consulte su vigencia" class="mx-auto" />
     </div>
     <h1 class="text-4xl mb-3 font-bold text-center">Gestión Permiso</h1>
     <hr class="border-t-2 border-green-500 mb-5 w-1/3 mx-auto" />
@@ -14,13 +14,13 @@
                 <div class="flex flex-wrap -mx-2">
                     <div class="w-full md:w-1/2 px-2">
                         <div class="form-group">
-                            <label for="placa" class="block text-sm    2">Placa:</label>
+                            <label for="placa" class="block text-sm">Placa:</label>
                             <input type="text" id="placa" name="placa" class="inputstatic shadow appearance-none border w-full py-2 px-3 leading-tight" value="{{ session('placa') }}" readonly>
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 px-2">
                         <div class="form-group">
-                            <label for="cat" class="block  text-sm    2">CAT:</label>
+                            <label for="cat" class="block  text-sm">CAT:</label>
                             <input type="text" id="cat" name="cat" class="inputstatic shadow appearance-none border w-full py-2 px-3 leading-tight" value="{{ session('cat') }}" readonly>
                         </div>
                     </div>
