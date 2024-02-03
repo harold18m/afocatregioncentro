@@ -19,7 +19,7 @@
       
     body {
       font-family: 'Roboto', sans-serif;
-      font-size: 15px;
+      font-size: 12px;
     }
 
     body p {
@@ -38,7 +38,7 @@
 
     .permiso {
       text-align: center;
-      font-size: 20px;
+      font-size: 16px;
     }
     .respuesta {
       color: #539E61;
