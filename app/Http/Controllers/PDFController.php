@@ -52,8 +52,6 @@ class PDFController extends Controller
             return mb_strtoupper($nombre, 'UTF-8');
         }, $familiaresInput);
 
-        // $familiares = array_pad($familiares, 4, "....................................................");
-
         $data = [
             'placa' => $placa,
             'cat' => $cat,
