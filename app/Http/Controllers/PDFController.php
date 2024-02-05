@@ -75,7 +75,7 @@ class PDFController extends Controller
 
         // Generar PDF
         $pdf = PDF::loadView('pdf_view', $data);
-        //Mail::to('tramites@afocatregioncentro.pe')->send(new PermisoFueraRuta($pdf, $numeroAleatorio));
+        Mail::to('tramites@afocatregioncentro.pe')->send(new PermisoFueraRuta($pdf, $numeroAleatorio));
         return $pdf->download('PERMISO-AFOCAT.pdf');
     }
     private function getSpanishMonth($monthNumber)
