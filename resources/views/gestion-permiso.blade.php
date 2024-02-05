@@ -58,7 +58,7 @@
                     <div   div class="w-full md:w-1/2 px-2">
                         <div class="form-group">
                             <label for="fechaInicio" class="block text-sm ">Fecha de inicio:</label>
-                            <input type="date" id="fechaInicio" name="fechaInicio" class="shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" value="{{ date('Y-m-d') }}"  required>
+                            <input type="date" id="fechaInicio" name="fechaInicio" class="shadow appearance-none border w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" value="{{ date('Y-m-d') }}" min="{{ date('Y-m-d') }}"  required>
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 px-2">
@@ -125,9 +125,6 @@
                     this.value = '';
                 }
             });
-
-            var today = new Date().toISOString().split('T')[0];
-            document.getElementById('fechaInicio').setAttribute('min', today);
 
             document.getElementById('formPermiso').addEventListener('submit', function(e) {
                 var fechaInicio = new Date(document.getElementById('fechaInicio').value);
