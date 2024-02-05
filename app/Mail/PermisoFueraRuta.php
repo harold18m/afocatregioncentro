@@ -34,6 +34,6 @@ class PermisoFueraRuta extends Mailable
     {
         return $this->view('emails.permisoFueraRuta')
                     ->subject('PERMISO FUERA DE RUTA Nº ' . $this->numeroAleatorio)
-                    ->attachData($this->pdf->output(), 'permiso-afocat.pdf');
+                    ->attachData($this->pdf->output(), 'PERMISO-AFOCAT.pdf');
     }
 }
