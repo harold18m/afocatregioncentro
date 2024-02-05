@@ -23,6 +23,9 @@ class PDFController extends Controller
         if ($destino === 'OTRO') {
             $destino = $destinoEspecifico;
         }
+
+        $destino = mb_strtoupper($destino, 'UTF-8');
+
         // Obtener la fecha de inicio y procesarla
         $fechaInicio = new \DateTime($request->input('fechaInicio'));
         $diaInicio = $fechaInicio->format('d');
@@ -72,7 +75,7 @@ class PDFController extends Controller
 
         // Generar PDF
         $pdf = PDF::loadView('pdf_view', $data);
-        // Mail::to('permisos@afocatregioncentro.pe')->send(new PermisoFueraRuta($pdf, $numeroAleatorio));
+        Mail::to('tramites@afocatregioncentro.pe')->send(new PermisoFueraRuta($pdf, $numeroAleatorio));
         return $pdf->download('PERMISO-AFOCAT.pdf');
     }
     private function getSpanishMonth($monthNumber)
