@@ -45,7 +45,7 @@ class PDFController extends Controller
         $mes = strftime('%B');
         $anio = strftime('%Y');
 
-        $conductor = strtoupper($request->input('conductor'));
+        $conductor = mb_strtoupper($request->input('conductor'), 'UTF-8');
 
         $familiaresInput = $request->input('familiar');
 

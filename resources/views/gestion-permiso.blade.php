@@ -92,7 +92,7 @@
                         return;
                     }
                     i++;
-                    $('#familiares').append('<div class="form-group relative"><label for=id="familiar' + i + '" class="block text-sm">Familiar / Acompañante:</label><input type="text" id="familiar' + i + '" name="familiar[]" class="shadow appearance-none border border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent pr-10"><span class="removeFamiliar absolute right-2 top-4 mt-3 mr-2 cursor-pointer"><i class="fas fa-times text-red-500"></i></span></input>');
+                    $('#familiares').append('<div class="form-group relative"><label for=id="familiar' + i + '" class="block text-sm">Familiar / Acompañante:</label><input type="text" id="familiar' + i + '" name="familiar[]" required class="shadow appearance-none border border-solid w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent pr-10"><span class="removeFamiliar absolute right-2 top-4 mt-3 mr-2 cursor-pointer"><i class="fas fa-times text-red-500"></i></span></input>');
                 });
 
                 // Cuando se hace clic en el botón de eliminar
