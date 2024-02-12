@@ -13,16 +13,8 @@
                 font-family: 'Roboto', sans-serif;
                 font-size: 14px;
                 }
-            h1{
-                text-align: end;
-                font-size: 70px;
-                margin-bottom: 0px;
-                padding-left: 100px;
-                color: #4B2775;
-                position: relative;
-            }
             p {
-                margin: 3px;
+                margin: 4px;
                 color: black;
                 font-weight: semi-bold;
             }
@@ -46,7 +38,7 @@
                 Decreto Supremo 015 - 2016 MTC </p>
             </td>
             <td style="width: 50%;">
-                <h1>SOAT</h1>
+                <img src="https://afocatregioncentro.pe/power/wp-admin/images/logo_afocat.png" style="width: 300px;">
             </td>
         </tr>
     </table>
@@ -55,7 +47,7 @@
         <tr>
             <td style="width: 50%;">
                 <p> COMPAÑÍA DE SEGUROS </p>
-                <span> AFOCAT REGION CENTRO</span>
+                <span> AFOCAT REGIÓN CENTRO</span>
             </td>
             <td style="width: 50%;">
                 <p> EN CASO DE EMERGENCIAS </p>
@@ -63,16 +55,16 @@
             </td>
         </tr>
     </table>
-    <span style="font-size: 20px;"> \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</span>
+    <span style="font-size: 20px;"> \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</span>
     <table style="width: 100%;">
         <tr>
             <td style="width: 50%;">
-                <p> VIGENCIA DE LA PÓLIZA </p>
-                <p> Nº Póliza - Certificado</p>
+                <p> VIGENCIA DE CAT </p>
+                <p> Nº CAT - Certificado</p>
                 <span> {{ $cat }} </span>
             </td>
             <td style="width: 50%;">
-                <p> CERTIFICADO SOAT
+                <p> CERTIFICADO CAT DE  
                     CONTROL POLICIAL </p>
             </td>
         </tr>
@@ -114,7 +106,7 @@
                 <p> CONTRATANTE / ASEGURADO </p>
                 <span> {{ $cliente }} </span>
                 <p> Importe de la prima </p>
-                <span> NaN </span>
+                <span> </span>
                 <p> Fecha </p>
                 <span> {{ $fechasistema }} </span>
                 <p> Hora de emisión </p>

@@ -73,6 +73,7 @@ class ConsultaController extends Controller
     
         $result = $response->json();
         $data = $result['returnObject'];
+        $placa = $data['placa'];
         $cliente = $data['razon'];
         $direccion = $data['direccion'];
         $categoria = $data['nombreClase'];
