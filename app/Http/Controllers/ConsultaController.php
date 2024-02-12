@@ -11,7 +11,7 @@ class ConsultaController extends Controller
 {
     public function index()
     {
-        return view('consulta.index');
+        return view('consulta.principal');
     }
 
     public function consultarVigencia(Request $request)
@@ -21,7 +21,7 @@ class ConsultaController extends Controller
         $opcion = "1"; // "1" para "Consultar por placa" y "2" para "Consultar por CAT
 
         if (empty($placa)) {
-            return redirect()->route('home');
+            return redirect()->route('consultar-cat')->with('error', 'Por favor, ingrese una placa');
         }
 
         try {
