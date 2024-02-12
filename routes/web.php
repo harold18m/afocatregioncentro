@@ -25,5 +25,5 @@ Route::get('/consultar-vigencia', [VigenciaController::class, 'consultarVigencia
 Route::get('/gestion-permiso', [GestionPermisoController::class, 'mostrarGestionPermiso'])->name('gestion-permiso');
 Route::post('/generar-permiso', [PDFController::class, 'generatePDF'])->name('generatePDF');
 Route::get('/consulta-cat', [ConsultaController::class, 'index'])->name('consultar-cat');
-Route::get('/consulta', [ConsultaController::class, 'consultarVigencia'])->name('consulta-vigencia');
+Route::get('/consulta-vigencia', [ConsultaController::class, 'consultarVigencia'])->name('consulta-vigencia');
 Route::get('/imprimir-soat', [ConsultaController::class, 'imprimirSoat'])->name('imprimir-soat');

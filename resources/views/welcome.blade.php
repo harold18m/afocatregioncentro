@@ -46,6 +46,9 @@
             <input type="submit" value="Verificar Vigencia" class="submit px-4 py-2 text-white" />
         </form>
     </main>
+    <div>
+        <a href="{{ url('/consulta-cat') }}" class="text-center"> Consultar CAT </a>
+    </div>
     <style>
         .submit {
         background-color: #00906f;
