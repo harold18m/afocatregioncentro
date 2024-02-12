@@ -9,9 +9,9 @@ class VigenciaController extends Controller
 {
     public function consultarVigencia(Request $request)
     {
-        $opcion = $request->input('opcion');
+        // $opcion = $request->input('opcion');
         $placa = $request->input('placa');
-        
+        $opcion = "1"; // "1" para "Consultar por placa" y "2" para "Consultar por CAT
 
         if (empty($placa)) {
             return redirect()->route('home');
