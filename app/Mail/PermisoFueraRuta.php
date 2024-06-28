@@ -13,16 +13,20 @@ class PermisoFueraRuta extends Mailable
 
     public $pdf;
     public $numeroAleatorio;
+    public $numeroPlaca;
+    public $numeroCat;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($pdf, $numeroAleatorio)
+    public function __construct($pdf, $numeroAleatorio, $numeroPlaca, $numeroCat)
     {
         $this->pdf = $pdf;
         $this->numeroAleatorio = $numeroAleatorio;
+        $this->numeroPlaca = $numeroPlaca;
+        $this->numeroCat = $numeroCat;
     }
 
     /**
@@ -33,7 +37,7 @@ class PermisoFueraRuta extends Mailable
     public function build()
     {
         return $this->view('emails.permisoFueraRuta')
-                    ->subject('PERMISO FUERA DE RUTA Nº ' . $this->numeroAleatorio)
+                    ->subject('PERMISO Nº ' . $this->numeroAleatorio . ' - Placa: ' . $this->numeroPlaca . ' - CAT: ' . $this->numeroCat)
                     ->attachData($this->pdf->output(), 'PERMISO-AFOCAT.pdf');
     }
 }

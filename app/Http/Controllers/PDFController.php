@@ -29,8 +29,8 @@ class PDFController extends Controller
         // Obtener la fecha de inicio y procesarla
         $fechaInicio = new \DateTime($request->input('fechaInicio'));
         $diaInicio = $fechaInicio->format('d');
-        $mesInicio = $this->getSpanishMonth($fechaInicio->format('n')); 
-        $mesInicio = strtoupper($mesInicio); 
+        $mesInicio = $this->getSpanishMonth($fechaInicio->format('n'));
+        $mesInicio = strtoupper($mesInicio);
         $anioInicio = $fechaInicio->format('Y');
 
         // Obtener la fecha de fin y procesarla
@@ -75,7 +75,7 @@ class PDFController extends Controller
 
         // Generar PDF
         $pdf = PDF::loadView('pdf_view', $data);
-        Mail::to('tramites@afocatregioncentro.pe')->send(new PermisoFueraRuta($pdf, $numeroAleatorio));
+        Mail::to('tramites@afocatregioncentro.pe')->send(new PermisoFueraRuta($pdf, $numeroAleatorio, $placa, $cat));
         return $pdf->download('PERMISO-AFOCAT.pdf');
     }
     private function getSpanishMonth($monthNumber)
